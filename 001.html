@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+</head>
+<body>
+    <!--action : 내 요청을 처리할 주소(비어 있으면 나 자신)  -->
+                                         <!-- method: 요청을 무엇으로 보낼지 (ex:택배,인편,특급배송)
+                                              get, post-->
+
+
+    <!-- 보통 로그인은 POST로 처리-->
+
+    <form action ="" method="POST">
+        <input type="text" name="id">
+        <input type="password" name="password">
+        <button>로그인</button>
+
+
+
+        <!--form:사용자가 입력한 데이터를 서버로 보내기 위한 양식
+            input: 사용자가 입력하는 부분
+            button: 사용자가 입력한 데이터를 서버로 보내는 버튼 -->
+
+
+        <!--검색창 같은 경우 get으로 많이 처리 함,post를 사용하는 경우도 종종 있음-->
+        <form action ="" method="post">
+            <input type="text" name="Q">
+            <button>검색</button>
+
+
+        <!-- 로그인 버튼을 누르면 아래 처럼 주소창이 변함
+        http://localhost:63342/20240508/001.html?id=aaa&password=bbb
+
+
+        get방식??
+
+        @@@@입력한 데이터가 주소창의 url에 표시됩
+
+        1.로그인 버튼을 누르게 되면 브라우저의 각각에 input의 name값과 value값을 가져와서 아래 패킷 데이터를 만듦.
+
+
+        2.패킷정보
+
+       host:나 자신
+
+       이 패킷을 host로 보내서 처리.
+
+       3. 처리해야할 사람이 나 자신임으로 나 자신에게 아래 주소처럼 ㄸ게 됨
+       http://localhost:63342/20240508/001.html?id=aaa&password=bbb
+
+
+       get 방식의 장점과 단점
+
+       1.URL에 데이터가 노출 되어 보안에 취약.
+       카페 같은 곳에서 누가 훔쳐볼수있음 URL도청
+
+       2.노출이 되어도 좋은 데이터는 GET으로 보통은 검색창들을 GET으로 처리
+
+       3.모두가 검색 키워드를 GET으로 만들진 않음, POST처리
+
+        -->
+
+
+            <!-- post 방식
+            1.로그인 버튼을 누르면 브라우저에서 각각의 input의 name값과 value값을 입력하여 패킷 데이터를 생성
+
+            POST / HTTP /1.1
+            Host: 나 자신
+
+            {
+               "id":aaa,
+               "pw":bbb
+               ...생략...
+               }
+            2.이 패킷을 host로 보내서 처리.
+            3.그런데 처리해야 할 사람이 나 자신, 그런데 나 자신은 post를 처리할 코드와 sw가 없습니다.
+            그래서 아무것도 처리 되지 않는 것 처럼 보임
+                -->
+
+
+        </form>
+    </form>
+</body>
+</html>

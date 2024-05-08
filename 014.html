@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!--데이터를 url로 보내고 싶다면 get
+            데이터를 숨겨서 보내고 싶다면 post-->
+<!-- http://localhost:63342/20240508/014.html?email=hello%40gmail.com&password=adsfadf&gender=male&html=on&css=on&javascript=on
+--> <!-- %40은 @-->
+
+        <!-- https://www.urlencoder.org/ko/
+        url 인코딩
+        인코딩: 우리가 원하는 방식으로 문자열을 변경
+        디코딩: 원본으로 복구-->
+
+
+    <h1>서비스이름</h1>
+        <section>
+            <h2>로그인</h2>
+            <form action="" method="get">
+                <label for = "user-email">이메일</label>
+                <input type="email" id="user-email" name="email">
+
+                <label for="user-password">비밀번호</label>
+                <input type="password" id="user-password" name="password">
+
+
+
+                <fieldset>
+                <label for="user-male">남</label>
+                <input type="radio" id="user-male" name="gender" value="male">
+                <label for="user-female">여</label>
+                <input type="radio" id="user-female" name="gender" value="female">
+                <label for="user-nothing">선택안함</label>
+                <input type="radio" id="user-nothing" name="gender" value="nothing">
+                </fieldset>
+
+                <fieldset>
+                    <legend>사용 기술</legend>
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="html" name="skill" value="heml">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="css" name="skill" value="css">
+                    <label for="javascript">javascript</label>
+                    <input type="checkbox" id="javascript" name="skill" value="javascript">
+
+
+
+                </fieldset>
+
+            <button>회원가입</button>
+
+
+
+            </form>
+
+
+        </section>
+
+
+
+
+</body>
+</html>
