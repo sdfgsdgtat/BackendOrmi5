@@ -1,31 +1,56 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+    .ul a {
+    color: yellow;
+    }
+
+    /* 클래스 선택자 */
+    .click {
+    color: green;
+    background: black;
+    }
+
+    /* 유형 선택자 */
+    html body main section article div ul li p strong span a {
+    background: purple;
+    color: blue;
+    }
+    </style>
+
+
+
 </head>
 <body>
-    <!-- date, datetime  날짜와 시간에 관련된 form은 브라우저마다 다름
-    일관된 양식을 제공하기 위해서 라이브러리를 사용 하거나 직접 제작
-
-    -->
-
-    <input type="text" name="" id=""><br>
-    <input type="date" name="" id=""><br>
-    <input type="email" name="" id=""><br>
-    <input type="tel" name="" id=""><br>
-    <input type="password" name="" id=""><br>
-    <input type="checkbox" name="" id=""><br>
-    <input type="radio" name="" id=""><br>
-    <input type="file" name="" id=""><br>
-    <input type="rnge" name="" id=""><br>
-    <input type="color" name="" id=""><br>
-    <input type="text" name="" id="" placeholder="검색어를 입력 하세요.">
-
-
+<main>
+    <section>
+        <article>
+            <div>
+                <ul class="ul">
+                    <li>
+                        <p>
+                            <strong>
+										<span>
+	                    <a href="#" class="click">
+	                      1. 이 글자는 어떤 색일까요?
+	                      2. 배경색은 어떤 색일까요?
+	                    </a>
+	                  </span>
+                            </strong>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+</main>
 
 
 </body>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+        .container {
+            display: flex;
+            align-items: center; /* 세로 중앙 정렬 */
+            justify-content: space-between; /* 요소들을 양쪽으로 정렬 */
+            background-color: white;
+            width: 318px;
+            padding: 30px 25px;
+            margin: auto;
+        }
+        button {
+            padding: 0;
+            border: none;
+            background: none;
+        }
+        button img {
+            display: block;
+        }
+        .right-section {
+            display: flex;
+            align-items: center; /* 이미지와 텍스트를 세로 중앙 정렬 */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="#"><img src="weniv-logo.png" style="width:80px; height:20px;"></a>
+    <a href="#"><img src="icon-lock.jpg" style="width:15px; height:15px;"></a>
+    <a href="#"><img src="icon-lock.jpg" style="width:15px; height:15px;"></a>
+</header>
+<div class="container">
+    <div>
+        더 편리해진 위니브에 오신 것을 환영합니다.<br>
+        <a href="#"><button><img src="login-brtton.jpg"></button></a>
+    </div>
+    <div class="right-section">
+        <img src="icon-lock.jpg" style="width:15px; height:15px;">
+        <a href="#" class="userid">아이디</a>
+        <a href="#">비밀번호 찾기</a>
+        <img src="icon-user.jpg" style="width:15px; height:15px;">
+        <a href="#">회원가입</a>
+    </div>
+</div>
+</body>
+</html>
