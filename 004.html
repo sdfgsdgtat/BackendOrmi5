@@ -1,32 +1,93 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+       <!--/* h1{color:red;}
+        h2{color:red;}
+        p {color:red;}
+        */
+       /*h1,h2,p {color:red;}*/-->
+       *{
+
+
+
+           padding:10px;
+           margin: 10px;
+
+       }
+
+       #test
+       {
+           color: blueviolet;
+
+
+       }
+       div {
+           color: red;
+           border: 5px solid pink;
+       }
+       h1 { border: inherit; }
+    <!--
+        /*[id="test"], p{
+            id test와 p 전부 적용
+
+
+        }
+         */
+       /*div p button{
+
+            div안의 p와 button까지 모두 공백,띄어쓰기를 통해 구분
+           자손,자식 모두 선택
+
+
+
+
+
+       }*/-->
+
+       div p button
+       {
+
+           color: lawngreen;
+       }
+
+       [type="button"]{
+           border:5px;
+           cursor:pointer;
+       }
+       [class="btn"]{
+           color:#fff;
+           background: royalblue;
+       }
+    </style>
+
+
+
 </head>
 <body>
 
-    <form action ="" method="">
-        아이디 :
-        <input type="text">
-        패스워드 :
-        <input type="password">
-        <button>로그인</button>
-    </form>
+    <input id="test" type="text" name="test">
+    <button>버튼</button>
+<div>
+   <!-- <h1 style="color:red;">Hello</h1>
+    <h2 style="color:red;">Hello</h2>
+    <p style="color:red;">Hello</p>
+    -->
 
-    <form action="" method="">
-        <label for="one">아이디</label>
-        <input type="text" id="one">
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <p>Hello</p>
+    <button>버튼2</button>
+    <p>p태그 텍스트</p>
 
-        <label fot ="two">패스워드</label>
-        <input type =password id ="two">
+</div>
 
 
-
-
-    </form>
 </body>
 </html>
